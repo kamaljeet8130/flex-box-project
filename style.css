@@ -121,3 +121,77 @@ ul :hover{
         background-repeat: no-repeat;
         border-radius: 2px;
 }
+/* .type-section{
+    background-image: linear-gradient(
+        285deg,
+        hsl(0deg 0% 80%) 0%,
+        hsl(344deg 0% 81%) 40%,
+      );
+    border: 2px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+    flex-wrap: nowrap;
+}
+.type-item{
+    border: 2px solid red  ;
+    height: 200px;
+    width: 200px;
+    flex: 1 1 33% ; 
+} */
+
+.type-section {
+    background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;    
+    align-items: center;
+    padding: 1rem;
+    gap: 20px; 
+    /* max-width: 1024px;  */
+    margin: 50px auto;
+
+}
+.type-section>h2{
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.type-item {
+    height: 250px;
+    width: 300px; /* Fixed width to ensure 3 items per row */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.item-1{
+    background: url("./img/food1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item-2{
+    background: url("./img/food2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.item-3{
+    background: url("./img/food3.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* .item-4{
+    background: url("./img/food1.jpg");
+}
+.item-5{
+    background: url("./img/food1.jpg");
+}
+.item-6{
+    background: url("./img/food1.jpg");
+} */
