@@ -21,14 +21,13 @@ body{
     box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
 
 }
-
 .logo{
     font-weight: bold;
     font-size: 1.5rem;
 }
 ul li a{
     text-decoration: none;
-    font-weight: 300;
+    font-weight: 500;
     color: grey
 }
 ul li{
@@ -37,8 +36,9 @@ ul li{
     padding: 1rem;
 }
 ul :hover{
-    background: #d4dfed;
+    /* background: #d4dfed; */
     border-radius: 2px;
+    color: #3D8D7A;
 }       
 
 .hero-section{
@@ -72,7 +72,7 @@ ul :hover{
 }
 
 .about-us{
-    background-image: linear-gradient(
+    background: linear-gradient(
         285deg,
         hsl(0deg 0% 80%) 0%,
         hsl(344deg 0% 81%) 40%,
@@ -121,26 +121,6 @@ ul :hover{
         background-repeat: no-repeat;
         border-radius: 2px;
 }
-/* .type-section{
-    background-image: linear-gradient(
-        285deg,
-        hsl(0deg 0% 80%) 0%,
-        hsl(344deg 0% 81%) 40%,
-      );
-    border: 2px solid red;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    gap: 10px;
-    flex-wrap: nowrap;
-}
-.type-item{
-    border: 2px solid red  ;
-    height: 200px;
-    width: 200px;
-    flex: 1 1 33% ; 
-} */
 
 .type-section {
     background-image:linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5));
@@ -152,10 +132,9 @@ ul :hover{
     gap: 20px; 
     /* max-width: 1024px;  */
     margin: 50px auto;
-
 }
-.type-section>h2{
-    margin-top: 50px;
+.heading{
+    margin-top: 20px;
     width: 100%;
     text-align: center;
     font-weight: 300;
@@ -163,10 +142,11 @@ ul :hover{
 }
 .type-item {
     height: 250px;
-    width: 300px; /* Fixed width to ensure 3 items per row */
+    width: 300px; 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 50px;
 }
 .item-1{
     background: url("./img/food1.jpg");
@@ -186,12 +166,203 @@ ul :hover{
     background-size: cover;
     background-repeat: no-repeat;
 }
-/* .item-4{
-    background: url("./img/food1.jpg");
+.food-section{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    gap: 10px;
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.item-5{
-    background: url("./img/food1.jpg");
+.food-item{
+    /* border: 2px solid red; */
+    width: 400px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
-.item-6{
-    background: url("./img/food1.jpg");
-} */
+.food-img{
+    background: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.5)
+    );
+    width: 300px;
+    height: 150px;
+    border-radius: 50%;
+}
+.food-menu-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+}
+.food-menu-content>h3{
+    /* border: 2px solid black; */
+    font-size: .8rem;
+    font-weight: bold;
+    color: #333;
+}
+.food-menu-content>p{
+    font-size: .8rem;
+    color: #666;
+}
+.food-menu-content>span{
+    font-weight: bolder;
+    font-size: .7rem;
+    color: #3D8D7A;
+
+}
+.food-img-1{ 
+    background: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url("/img/food-menu1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.food-img-2{
+    background: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),
+    url("/img/food-menu2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.food-img-3{
+    background:linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),
+     url("/img/food-menu3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.food-img-4{
+    background: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ),url("/img/food-menu4.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.food-img-5{
+    background: linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ), url("/img/food-menu5.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.food-img-6{
+    background:linear-gradient(
+        rgba(0,0,0,0.3),rgba(0,0,0,0.3)
+    ), url("/img/food-menu6.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.container{
+    background: linear-gradient(
+        285deg,
+        hsl(0deg 0% 80%) 0%,
+        hsl(344deg 0% 81%) 40%,
+      );
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+.testimonial{
+    display: flex;
+}
+.user-testimonial{
+    /* border: 2px solid red; */
+    height: 350px;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.ratings{
+    color: gold;
+    font-size: 1.5rem;
+}
+.user-testimonial>p{
+    width: 80%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.user-img{
+    border-radius: 50%;
+}
+.user-img-1{
+    width: 100px;
+    height: 100px;
+    background: url("./img/male-photo1.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.user-img-2{
+    width: 100px;
+    height: 100px;
+    background: url("./img/male-photo2.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.user-img-3{
+    width: 100px;
+    height: 100px;
+    background: url("./img/male-photo3.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.user-testimonial>.name{
+    font-size: .8rem;
+    color: #333;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.contact-form{
+    /* border: 2px solid black ; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.contact-img{
+    /* border: 2px solid red ; */
+    width: 400px;
+    height: 400px;
+    background: url("img/restraunt-image.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+form{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    width: 500px;
+}
+form>h3{
+    font-weight: 400;
+    font-size: 1.5rem; 
+    color: #666;
+}
+.text{
+    border: none;
+    background: none;
+    border-bottom: 2px solid #d4dfed;
+    width: 100%;
+    padding: 10px;
+}
